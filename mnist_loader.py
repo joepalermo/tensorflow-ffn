@@ -14,7 +14,7 @@ def load_data():
     """Return the MNIST data as a tuple containing the training data,
     the validation data, and the test data.
     """
-    f = gzip.open('../data/mnist_data/mnist.pkl.gz', 'rb')
+    f = gzip.open('data/mnist_data/mnist.pkl.gz', 'rb')
     training_data, validation_data, test_data = cPickle.load(f)
     f.close()
     return (training_data, validation_data, test_data)
